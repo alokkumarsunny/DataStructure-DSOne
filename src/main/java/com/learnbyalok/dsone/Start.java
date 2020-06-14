@@ -18,15 +18,18 @@ public class Start {
 	 */
 	public static void main(String[] args) {
 
-		//test custom linklist
+		System.out.println("----------------------Custom LinkList-----------------------");
+		// test custom linklist
 		CustomLinkList<Object> linklistObj = new CustomLinkList<Object>();
 		linklistObj.insert(0, "1Inset");
-		linklistObj.insert(0, "3Inset");	
+		linklistObj.insert(0, "3Inset");
 		System.out.println(linklistObj.toString());
 		linklistObj.reverse();
 		System.out.println(linklistObj.toString());
-		
-		//test custom stack
+		System.out.println(linklistObj.getLength());
+
+		System.out.println("----------------------Custom Stack-----------------------");
+		// test custom stack
 		CustomStack<Integer> stackObj = new CustomStack<Integer>();
 		stackObj.push(10);
 		stackObj.push(20);
@@ -37,21 +40,20 @@ public class Start {
 		stackObj.pop();
 		System.out.println(stackObj.toString());
 		System.out.println(stackObj.peek());
-		
-		
-		
-		System.out.println("----------------------Queue-----------------------");
-				CustomQueue<Integer> queue = new CustomQueue<Integer>();
-				queue.enqueue(10);
-				queue.enqueue(11);
-				queue.enqueue(12);
-				queue.enqueue(13);
-				System.out.println(queue.toString());
-				queue.dequeue();
-				System.out.println(queue.toString());
-				System.out.println(queue.peek());
-		
-		
+		System.out.println(stackObj.getLength());
+
+		System.out.println("----------------------Custom Queue-----------------------");
+		CustomQueue<Integer> queue = new CustomQueue<Integer>();
+		queue.enqueue(10);
+		queue.enqueue(11);
+		queue.enqueue(12);
+		queue.enqueue(13);
+		System.out.println(queue.toString());
+		queue.dequeue();
+		System.out.println(queue.toString());
+		System.out.println(queue.peek());
+		System.out.println(queue.getLength());
+
 	}
 
 }

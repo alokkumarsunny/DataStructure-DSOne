@@ -23,4 +23,7 @@ public class CustomStack<T> {
 	public String toString(){
 		return innerLinkList.toString();
 	}
+	public int getLength() {
+		return innerLinkList.getLength();
+	}
 }

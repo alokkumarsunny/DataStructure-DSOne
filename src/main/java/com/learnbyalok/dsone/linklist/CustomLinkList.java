@@ -1,7 +1,4 @@
 package com.learnbyalok.dsone.linklist;
-
-import java.util.*;
-
 public class CustomLinkList<T> {
 	private Node<T> head , tail = null;
 	private int length = 0;

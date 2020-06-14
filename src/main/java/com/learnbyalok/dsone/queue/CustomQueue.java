@@ -24,4 +24,8 @@ public class CustomQueue<T> {
 	public String toString(){
 		return innerLinkList.toString().replace("->", "<-");
 	}
+	
+	public int getLength() {
+		return innerLinkList.getLength();
+	}
 }
