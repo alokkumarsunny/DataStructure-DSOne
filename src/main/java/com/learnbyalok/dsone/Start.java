@@ -4,6 +4,7 @@
 package com.learnbyalok.dsone;
 
 import com.learnbyalok.dsone.linklist.CustomLinkList;
+import com.learnbyalok.dsone.queue.CustomQueue;
 import com.learnbyalok.dsone.stack.CustomStack;
 
 /**
@@ -16,15 +17,11 @@ public class Start {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-//		System.out.println("This is my alok!");
+
+		//test custom linklist
 		CustomLinkList<Object> linklistObj = new CustomLinkList<Object>();
 		linklistObj.insert(0, "1Inset");
-		linklistObj.insert(0, "3Inset");
-		//linklistObj.remove(2);
-		//List<Integer> arrlistObj = new ArrayList<Integer>(5);
-		//arrlistObj.add(5);
-		//arrlistObj.add(6);	
-		//linklistObj.append(arrlistObj);		
+		linklistObj.insert(0, "3Inset");	
 		System.out.println(linklistObj.toString());
 		linklistObj.reverse();
 		System.out.println(linklistObj.toString());
@@ -39,6 +36,20 @@ public class Start {
 		System.out.println(stackObj.toString());
 		stackObj.pop();
 		System.out.println(stackObj.toString());
+		System.out.println(stackObj.peek());
+		
+		
+		
+		System.out.println("----------------------Queue-----------------------");
+				CustomQueue<Integer> queue = new CustomQueue<Integer>();
+				queue.enqueue(10);
+				queue.enqueue(11);
+				queue.enqueue(12);
+				queue.enqueue(13);
+				System.out.println(queue.toString());
+				queue.dequeue();
+				System.out.println(queue.toString());
+				System.out.println(queue.peek());
 		
 		
 	}

@@ -14,8 +14,12 @@ public class CustomLinkList<T> {
 		}		
 	}
 
-	public Node<T> getTail() {
-		return tail;
+	public T getTail() {
+		if (tail != null) {
+			return tail.getValue();
+		}else {
+			return null;
+		}		
 	}
 
 	public int getLength() {
