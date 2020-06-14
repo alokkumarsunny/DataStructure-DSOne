@@ -2,12 +2,16 @@ package com.learnbyalok.dsone.linklist;
 
 import java.util.*;
 
-public class MyLinkList<T> {
+public class CustomLinkList<T> {
 	private Node<T> head , tail = null;
 	private int length = 0;
 	
-	public Node<T> getHead() {
-		return head;
+	public T getHead() {
+		if (head != null) {
+			return head.getValue();
+		}else {
+			return null;
+		}		
 	}
 
 	public Node<T> getTail() {
@@ -16,7 +20,7 @@ public class MyLinkList<T> {
 
 	public int getLength() {
 		return length;
-	}
+	}	
 	
 	public int append(T value) {
 		int isAppended = 0;
@@ -99,8 +103,9 @@ public class MyLinkList<T> {
 		try {					
 			if(index == 0) {
 				head = head.getNext();
+				length--;
 			}
-			if(index > length || index < 0) {
+			else if(index > length || index < 0) {
 				return isRemoved;
 			}
 			else {

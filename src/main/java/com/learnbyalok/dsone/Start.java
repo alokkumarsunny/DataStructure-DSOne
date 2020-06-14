@@ -2,10 +2,9 @@
  * 
  */
 package com.learnbyalok.dsone;
-import java.util.ArrayList;
-import java.util.List;
 
-import com.learnbyalok.dsone.linklist.*;
+import com.learnbyalok.dsone.linklist.CustomLinkList;
+import com.learnbyalok.dsone.stack.CustomStack;
 
 /**
  * @author akumar5
@@ -18,7 +17,7 @@ public class Start {
 	 */
 	public static void main(String[] args) {
 //		System.out.println("This is my alok!");
-		MyLinkList<Object> linklistObj = new MyLinkList<Object>();
+		CustomLinkList<Object> linklistObj = new CustomLinkList<Object>();
 		linklistObj.insert(0, "1Inset");
 		linklistObj.insert(0, "3Inset");
 		//linklistObj.remove(2);
@@ -29,6 +28,17 @@ public class Start {
 		System.out.println(linklistObj.toString());
 		linklistObj.reverse();
 		System.out.println(linklistObj.toString());
+		
+		//test custom stack
+		CustomStack<Integer> stackObj = new CustomStack<Integer>();
+		stackObj.push(10);
+		stackObj.push(20);
+		stackObj.push(30);
+		stackObj.push(31);
+		stackObj.push(32);
+		System.out.println(stackObj.toString());
+		stackObj.pop();
+		System.out.println(stackObj.toString());
 		
 		
 	}
