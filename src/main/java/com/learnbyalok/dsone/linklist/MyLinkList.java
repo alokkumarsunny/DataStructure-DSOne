@@ -72,7 +72,7 @@ public class MyLinkList<T> {
 				isInserted = append(value);
 				return isInserted;
 			}
-			else if(index > length) {
+			else if(index > length || index<0) {
 				return isInserted;
 			}else {
 				Node<T> node = new Node<T>();
@@ -100,7 +100,7 @@ public class MyLinkList<T> {
 			if(index == 0) {
 				head = head.getNext();
 			}
-			if(index > length) {
+			if(index > length || index < 0) {
 				return isRemoved;
 			}
 			else {
@@ -121,6 +121,22 @@ public class MyLinkList<T> {
 			System.out.print(e.toString());
 		}
 		return isRemoved;
+	}
+	
+	
+	public void reverse() {			
+		
+		Node<T> firstNode = head;
+		Node<T> secondNode = head.getNext();
+		tail = head;		
+		while (secondNode != null) {
+			Node<T> temp = secondNode.getNext();
+			secondNode.setNext(firstNode);
+			firstNode = secondNode;
+			secondNode = temp;
+		}
+		tail.setNext(null);
+		head = firstNode;	
 	}
 	
 	

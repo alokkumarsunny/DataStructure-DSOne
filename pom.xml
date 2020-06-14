@@ -5,4 +5,36 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Data-Structure</name>
   <description>Data-Structure</description>
+  <properties>
+        <maven.compiler.release>11</maven.compiler.release>
+  </properties>
+ 
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                </plugin>
+
+                <plugin>
+                <!-- Build an executable JAR -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                  <archive>
+                    <manifest>
+                      <addClasspath>true</addClasspath>
+                      <classpathPrefix>lib/</classpathPrefix>
+                      <mainClass>com.learnbyalok.dsone.Start</mainClass>
+                    </manifest>
+                  </archive>
+                </configuration>
+              </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
 </project>
