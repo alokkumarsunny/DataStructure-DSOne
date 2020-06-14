@@ -1,6 +1,6 @@
 # DSOne
 
-A raw implementation of Stander Data Structure and Algorithum using JAVA. All the Data Structure created is generic(accept all data type).
+A raw implementation of Standard Data Structure and Algorithum using JAVA. All the Data Structure created is generic(accept all data type).
 
 ## Getting Started
 
@@ -52,7 +52,6 @@ mvn build
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
