@@ -1,6 +1,6 @@
-# Project Title
+# DSOne
 
-One Paragraph of project description goes here
+A raw implementation of Stander Data Structure and Algorithum using JAVA. All the Data Structure created is generic(accept all data type).
 
 ## Getting Started
 
@@ -11,38 +11,27 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Java 8 or above
 ```
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+clone this project
 
 ```
-Give the example
+git clone https://github.com/openvswitch/openvswitch.github.io.git
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+go to POM.xml folder and run  following commad
 
 ```
-Give an example
+mvn clean
+mvn install
+mvn build
+java "jar-name"
 ```
+
 
 ### And coding style tests
 
@@ -54,11 +43,14 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+This project is basically learning purposes. Hence no production deployment is required. However you can create jar for execution using 
+
+```
+mvn build
+```
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
@@ -72,7 +64,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Alok Kumar** - *Initial work* - [github](https://github.com/alokkumarsunny)
+* **Kunal Gaurav** - *Initial work* - [github](https://github.com/kunalgaurav18)
+
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -82,6 +76,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
