@@ -21,7 +21,7 @@ A step by step series of examples that tell you how to get a development env run
 clone this project
 
 ```
-git clone https://github.com/openvswitch/openvswitch.github.io.git
+https://github.com/alokkumarsunny/DataStructure-DSOne.git
 ```
 go to POM.xml folder and run  following commad
 
